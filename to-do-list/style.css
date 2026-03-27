@@ -46,13 +46,43 @@ button:hover{
     background:#45a049;
 }
 
-ul{
+ol{
     list-style:none;
     padding:0;
     margin-top:20px;
+
 }
 
 li{
     padding:10px;
     border-bottom:1px solid #eee;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  
 }
+
+.remove-btn{
+
+    padding:10px 15px;
+    border:none;
+    background:#af4c4c;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    margin-left:auto;
+
+}
+
+.remove-btn:hover{
+
+    background:#963b3b;
+}
+
+li::before{
+    content:"•";
+    
+    margin-right:10px;
+}
+
