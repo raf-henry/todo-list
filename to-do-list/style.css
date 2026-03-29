@@ -1,3 +1,11 @@
+:root{
+    --green:#4CAF50;
+    --green-dark:#45a049;
+    --red:#af4c4c;
+    --red-dark:#963b3b;
+    --gray:#a3a1a1;
+}
+
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,21 +44,19 @@ input{
 button{
     padding:10px 15px;
     border:none;
-    background:#4CAF50;
+    background:var(--green);
     color:white;
     border-radius:5px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#45a049;
+    background:var(--green-dark);
 }
 
 ol{
-    list-style:none;
     padding:0;
     margin-top:20px;
-
 }
 
 li{
@@ -58,31 +64,45 @@ li{
     border-bottom:1px solid #eee;
 
     display:flex;
-    justify-content:space-between;
     align-items:center;
-  
+    gap:10px;
+}
+
+.text-align{
+    flex:1;
 }
 
 .remove-btn{
-
-    padding:10px 15px;
-    border:none;
-    background:#af4c4c;
-    color:white;
-    border-radius:5px;
-    cursor:pointer;
-    margin-left:auto;
-
+    background:var(--red);
 }
 
 .remove-btn:hover{
-
-    background:#963b3b;
+    background:var(--red-dark);
 }
 
-li::before{
-    content:"•";
-    
-    margin-right:10px;
+.check-btn{
+    padding:8px 12px;
+    background:var(--gray);
+    border-radius:20px;
+}
+
+.check-btn:hover{
+    background:var(--green);
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity:0.7;
+}
+
+.completed-btn{
+    background:var(--green);
+}
+
+p{
+    margin-bottom: 3px;
+    border:none;
+    color:rgb(167, 157, 157);
+    border-radius:5px;
 }
 
